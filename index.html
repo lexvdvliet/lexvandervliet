@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Digitaal visitekaartje van Lex van der Vliet, CTO bij ClearViewData.">
+  <title>Lex van der Vliet | ClearViewData</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-left"></div>
+    <div class="ambient ambient-right"></div>
+
+    <main class="card-app">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <div class="brand-row">
+            <img class="brand-logo" src="12.png" alt="ClearViewData logo">
+            <span class="status-pill">CTO</span>
+          </div>
+
+          <p class="eyebrow">Digitaal visitekaartje</p>
+          <h1>Lex van der Vliet</h1>
+          <p class="lead">
+            Met een achtergrond in organisatiewetenschappen en een passie voor data &amp; AI
+            combineer ik techniek met de menselijke kant. Ik help organisaties om data praktisch,
+            begrijpelijk en echt waardevol te maken.
+          </p>
+
+          <div class="action-row">
+            <a class="button button-primary" href="https://www.clearviewdata.nl/" target="_blank" rel="noreferrer">Bekijk ClearViewData</a>
+            <button class="button button-secondary" id="saveContactBtn" type="button">Sla contact op</button>
+            <button class="button button-secondary" id="shareProfileBtn" type="button">Deel profiel</button>
+          </div>
+        </div>
+
+        <div class="portrait-panel">
+          <div class="portrait-ring"></div>
+          <img class="portrait" src="lex.jpg" alt="Portret van Lex van der Vliet">
+          <div class="floating-note">
+            <span class="note-kicker">Focus</span>
+            <strong>Data met impact</strong>
+            <span>Maatschappelijke waarde, pragmatisch toegepast.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <article class="info-card story-card">
+          <p class="section-label">Profiel</p>
+          <h2>Zakelijk, benaderbaar en oplossingsgericht</h2>
+          <p>
+            Vanuit ClearViewData werk ik aan datagedreven verbetering, AI-toepassingen en
+            self-service BI. Mijn stijl is praktisch: geen technologie om de technologie,
+            maar oplossingen die passen bij de mensen, processen en doelen van een organisatie.
+          </p>
+        </article>
+
+        <article class="info-card detail-card">
+          <p class="section-label">Kernpunten</p>
+          <ul class="detail-list">
+            <li>Data consultancy en datagedreven continu verbeteren</li>
+            <li>AI-oplossingen met menselijke controle en kwaliteit</li>
+            <li>Self-service BI en praktische implementatie</li>
+            <li>Sterk in bruggen slaan tussen business en techniek</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="contact-card">
+        <div class="contact-copy">
+          <p class="section-label">Contact</p>
+          <h2>Laten we kennismaken</h2>
+          <p>
+            Handig voor een eerste gesprek, samenwerking of een korte sparsessie over data, AI en
+            organisatievraagstukken.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="contact-link" href="mailto:info@clearviewdata.nl">
+            <span class="contact-label">E-mail</span>
+            <strong>info@clearviewdata.nl</strong>
+          </a>
+          <a class="contact-link" href="tel:+31628961350">
+            <span class="contact-label">Telefoon</span>
+            <strong>+31 6 28 96 13 50</strong>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/lex-van-der-vliet/" target="_blank" rel="noreferrer">
+            <span class="contact-label">LinkedIn</span>
+            <strong>/in/lex-van-der-vliet</strong>
+          </a>
+          <a class="contact-link" href="https://maps.google.com/?q=Veronesestraat+4,+1077+RB+Amsterdam" target="_blank" rel="noreferrer">
+            <span class="contact-label">Locatie</span>
+            <strong>Veronesestraat 4, 1077 RB Amsterdam</strong>
+          </a>
+        </div>
+      </section>
+
+      <section class="quote-strip">
+        <p>
+          "Data is geen doel op zich, maar een middel om betere keuzes te maken en echte impact te creëren."
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <a id="downloadVcf" href="#" download="lex-van-der-vliet.vcf" hidden>Download contact</a>
+  <script src="script.js"></script>
+</body>
+</html>
