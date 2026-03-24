@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,216 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">  <style>
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      padding-top: 14px;
+    }
+
+    .brand-row {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: auto;
+      margin: 0;
+    }
+
+    .brand-logo {
+      width: 92px;
+      max-width: 22vw;
+      opacity: 0.68;
+    }
+
+    .title-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 54px;
+      width: 100%;
+    }
+
+    .hero-name {
+      margin: 0;
+      white-space: nowrap;
+      font-size: clamp(1.9rem, 4vw, 4.1rem);
+      max-width: none;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+    }
+
+    .status-pill {
+      align-self: flex-start;
+      padding: 8px 14px;
+      font-size: 0.76rem;
+      line-height: 1;
+    }
+
+    .lead {
+      margin-top: 18px;
+      max-width: 58ch;
+    }
+
+    .action-row {
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    @media (max-width: 980px) {
+      .hero-card {
+        gap: 18px;
+      }
+
+      .portrait-panel {
+        padding: 0;
+      }
+
+      .portrait {
+        width: min(100%, 360px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-copy {
+        padding-top: 12px;
+      }
+
+      .brand-logo {
+        width: 80px;
+        max-width: 28vw;
+      }
+
+      .title-stack {
+        gap: 8px;
+        margin-top: 44px;
+      }
+
+      .hero-name {
+        font-size: clamp(1.55rem, 6vw, 2.75rem);
+      }
+
+      .lead {
+        margin-top: 16px;
+        font-size: 1rem;
+      }
+
+      .action-row {
+        gap: 10px;
+      }
+
+      .action-row .button {
+        flex: 1 1 calc(50% - 10px);
+        min-height: 48px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page-shell {
+        padding: 12px;
+      }
+
+      .hero-card {
+        padding: 16px;
+        gap: 16px;
+      }
+
+      .hero-copy {
+        padding-top: 8px;
+      }
+
+      .brand-logo {
+        width: 68px;
+        max-width: 30vw;
+      }
+
+      .title-stack {
+        gap: 8px;
+        margin-top: 38px;
+      }
+
+      .hero-name {
+        font-size: clamp(1.28rem, 7vw, 1.95rem);
+      }
+
+      .status-pill {
+        padding: 7px 10px;
+        font-size: 0.68rem;
+      }
+
+      .lead {
+        max-width: none;
+        font-size: 0.98rem;
+      }
+
+      .action-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .action-row .button {
+        width: 100%;
+        flex: 1 1 100%;
+      }
+
+      .portrait-panel {
+        min-height: auto;
+      }
+
+      .portrait-ring {
+        inset: 12px 8px 8px;
+      }
+
+      .portrait {
+        width: 100%;
+        aspect-ratio: 4 / 4.7;
+      }
+
+      .info-grid,
+      .contact-card {
+        padding: 10px;
+      }
+
+      .info-card,
+      .quote-strip,
+      .contact-copy,
+      .contact-actions {
+        padding: 16px;
+      }
+
+      .contact-link {
+        padding: 16px;
+      }
+
+      .contact-link strong {
+        font-size: 0.96rem;
+        word-break: break-word;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .brand-logo {
+        width: 60px;
+      }
+
+      .title-stack {
+        margin-top: 34px;
+      }
+
+      .hero-name {
+        font-size: 1.12rem;
+      }
+
+      .status-pill {
+        font-size: 0.64rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="page-shell">
@@ -20,11 +229,12 @@
         <div class="hero-copy">
           <div class="brand-row">
             <img class="brand-logo" src="12.png" alt="ClearViewData logo">
-            <span class="status-pill">CTO</span>
           </div>
 
-          <p class="eyebrow">Digitaal visitekaartje</p>
-          <h1>Lex van der Vliet</h1>
+          <div class="title-stack">
+            <h1 class="hero-name">Lex van der Vliet</h1>
+            <span class="status-pill">CTO</span>
+          </div>
           <p class="lead">
             Met een achtergrond in organisatiewetenschappen en een passie voor data &amp; AI
             combineer ik techniek met de menselijke kant. Ik help organisaties om data praktisch,
@@ -41,11 +251,6 @@
         <div class="portrait-panel">
           <div class="portrait-ring"></div>
           <img class="portrait" src="lex.jpg" alt="Portret van Lex van der Vliet">
-          <div class="floating-note">
-            <span class="note-kicker">Focus</span>
-            <strong>Data met impact</strong>
-            <span>Maatschappelijke waarde, pragmatisch toegepast.</span>
-          </div>
         </div>
       </section>
 
@@ -88,7 +293,7 @@
           </a>
           <a class="contact-link" href="tel:+31628961350">
             <span class="contact-label">Telefoon</span>
-            <strong>+31 6 28 96 13 50</strong>
+            <strong>+31 6 57 99 28 20</strong>
           </a>
           <a class="contact-link" href="https://www.linkedin.com/in/lex-van-der-vliet/" target="_blank" rel="noreferrer">
             <span class="contact-label">LinkedIn</span>
@@ -113,3 +318,12 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
